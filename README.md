@@ -24,7 +24,7 @@ You can now view crud-app in the browser.
 ```
 npm install -g json-server
 ```
-2. Uruchom JSON Server dla pliku data.json:
+2. W nowej zakładce terminala uruchom JSON Server dla pliku data.json:
 ```
 json-server --watch data.json
 ```
