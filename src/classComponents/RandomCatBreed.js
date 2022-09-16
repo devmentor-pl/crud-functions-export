@@ -8,7 +8,6 @@ class RandomCatBreed extends React.Component {
         get('/breeds').then(resp => {
             const random =
                 resp.data[Math.floor(Math.random() * resp.data.length)];
-            console.log(random);
             this.setState({ cat: random });
         });
     };
