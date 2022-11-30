@@ -24,8 +24,11 @@ You can now view crud-app in the browser.
 ```
 npm install -g json-server
 ```
-2. W nowej zakładce terminala uruchom JSON Server dla pliku data.json:
+2. JSON Server domyślnie uruchomi się na porcie 3000, lecz nie stanie się tak, gdy masz włączony DevServer webpacka (on również otwiera się domyślnie na porcie 3000, jak widzisz powyżej). Najpierw więc zakończ jego działanie, klikając w terminalu `Ctrl+C` i zatwierdzając to przez wpisanie `y`.
+Następnie w nowej zakładce terminala uruchom JSON Server dla pliku data.json:
 ```
 json-server --watch data.json
 ```
-Pamiętaj, by w pliku [./src/CatFactsProvider.js](https://github.com/devmentor-pl/crud-functions-export/blob/main/src/catFactsProvider.js) wskazać nowy adres URL dla API (znajdziesz go w zakomentwanej 2 linii).
+Dopiero teraz w innej zakładce terminala ponownie uruchom podgląd w trybie developerskim: `npm run start`.
+
+Pamiętaj, by w pliku [./src/CatFactsProvider.js](https://github.com/devmentor-pl/crud-functions-export/blob/main/src/catFactsProvider.js) wskazać nowy adres URL dla API (znajdziesz go w zakomentowanej 2 linii).
